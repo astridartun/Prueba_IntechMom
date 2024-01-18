@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Listado de Usuarios</title>
+    
+</head>
+<body>
+
+<h1>Listado de Usuarios</h1>
+
+<!--buscador-->
+<div class="content">
+    <div class="header">
+        <h4 class="title">Buscar amigos</h4>
+        <input type="text" id="filter" placeholder="search">
+    </div>
+    <ul id="result" class="search-lis">
+        <li><h3>Cargando...</h3></li>
+    </ul>
+</div>
+<!--final buscador-->
+
+
+<button id="mostrarModal">Mostrar Modal</button>
+
+<div id="miModal" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    <h2>Este es mi modal</h2>
+    <p>----</p>
+    <button onclick="cerrarModal()">Cerrar Modal</button>
+  </div>
+</div>
+
+<script src="script/script.js"></script>
+
+</body>
+</html>
